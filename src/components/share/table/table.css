@@ -1,0 +1,140 @@
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+  margin: 20px 0;
+  font-family: Arial, sans-serif;
+  height: calc(100vh - 310px);
+  overflow-y: auto;
+  border: 1px solid #17202e;
+  margin-top: 12px;
+  border-radius: 10px;
+  background-color: var(--dark-background);
+  position: relative;
+  padding: 12px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  table-layout: auto;
+  background-color: var(--dark-background);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+}
+
+th,
+td {
+  padding: 12px 15px;
+  height: 48px;
+  text-align: left;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+th:last-child,
+td:last-child {
+  border-right: none;
+}
+
+thead th {
+  font-weight: 400;
+  color: #8b8b8b;
+  font-size: 12px;
+}
+
+tbody td {
+  font-weight: 400;
+  font-size: 10px;
+}
+
+tbody tr {
+  transition: all 0.5s;
+}
+
+tbody tr:hover {
+  background-color: #243145;
+}
+
+.line-func {
+  position: relative;
+}
+
+.line-func__icons {
+  position: absolute;
+  display: none;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.line-func__icons .edit-icon {
+  margin-right: 6px;
+}
+tbody tr:hover .line-func__icons {
+  display: inline-block;
+}
+
+.first-col {
+  display: flex;
+  align-items: center;
+}
+
+.first-col .custom-checkbox {
+  margin-right: 34px;
+  line-height: 12px;
+}
+
+.custom-checkbox input[type="checkbox"] {
+  display: none;
+}
+
+.custom-checkbox .checkmark {
+  position: relative;
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background-color: transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  border: 1px solid #fff;
+}
+
+.custom-checkbox .checkmark::after {
+  content: "";
+  position: absolute;
+  display: none;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #8ad74e;
+}
+
+.custom-checkbox input[type="checkbox"]:checked + .checkmark::after {
+  display: block;
+}
+
+.custom-checkbox input[type="checkbox"]:checked + .checkmark {
+  background-color: transparent;
+}
+
+.table-container::-webkit-scrollbar {
+  display: none;
+}
+
+.table-container::-webkit-scrollbar-track {
+  display: none;
+}
+
+.table-container::-webkit-scrollbar-thumb {
+  display: none;
+}
+
+.table-container::-webkit-scrollbar-thumb:hover {
+  display: none;
+}

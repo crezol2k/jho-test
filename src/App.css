@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --primary-color: #dd5313;
+  --light-text-color: #ffffff;
+  --sub-light-text-color: #a9abad;
+  --dark-background: #17202e;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: var(--light-text-color);
+  font-family: "Noto Sans", sans-serif;
+  background-color: var(--dark-background);
+}
+
+.mt-1 {
+  margin-top: 12px;
+}
+.mt-2 {
+  margin-top: 24px;
+}
+
+.mb-1 {
+  margin-bottom: 12px;
+}
+
+.mb-2 {
+  margin-bottom: 24px;
+}
+
+.ml-1 {
+  margin-left: 12px;
+}
+.ml-2 {
+  margin-left: 24px;
+}
+
+.mr-1 {
+  margin-right: 12px;
+}
+.mr-2 {
+  margin-right: 24px;
+}
+
+.pr-2 {
+  margin-right: 24px;
+}
+
+.pb-1 {
+  margin-bottom: 12px;
+}
+
+.pb-2 {
+  margin-bottom: 24px;
+}
+
+.d-flex {
+  display: flex;
+}
+.align-center {
+  align-items: center;
+}
+.space-between {
+  justify-content: space-between;
+}
+
+.btn {
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  outline: none;
+  cursor: pointer;
+}
+
+.main-button {
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  transition: background-color 0.3s, transform 0.3s;
+  outline: none;
+  cursor: pointer;
+}
+
+.main-button.full-w {
+  width: 100%;
+}
+
+.main-button:hover {
+  background-color: #bb4511;
+  transform: scale(1.01);
+}
+
+.main-button:active {
+  background-color: #99380e;
+  transform: scale(0.99);
+}
+
+.main-button:focus {
+  box-shadow: 0 0 5px var(--primary-color);
+}

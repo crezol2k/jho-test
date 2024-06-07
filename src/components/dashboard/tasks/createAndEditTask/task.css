@@ -1,0 +1,132 @@
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 80vh;
+  width: 550px;
+}
+
+.form-container .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.form-container .header h4 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.form-container .header span {
+  font-size: 24px;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.box-input-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.box-input {
+  flex: 1;
+}
+
+.box-input.label-100 {
+  flex: 100;
+}
+.box-input.label-70 {
+  flex: 70;
+}
+
+.box-input.label-30 {
+  flex: 30;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  background-color: #2e3745;
+  color: var(--light-text-color);
+}
+
+.input-field:focus {
+  outline: none;
+}
+
+.input-field:disabled {
+  background-color: #f2f2f2;
+  cursor: not-allowed;
+}
+
+.input-field::placeholder,
+.textarea-field::placeholder {
+  color: var(--sub-light-text-color);
+  font-size: 12px;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.textarea-field {
+  width: 100%;
+  padding: 10px;
+  background-color: #2e3745;
+  color: var(--light-text-color);
+  border-radius: 10px;
+  resize: vertical;
+  min-height: 100px;
+  resize: none;
+  border: none;
+}
+
+.textarea-field:focus {
+  outline: none;
+}
+
+.error {
+  color: crimson;
+  font-size: 0.8rem;
+  margin-top: 5px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer .footer-left span {
+  font-size: 12px;
+  margin-left: 6px;
+}
+
+.footer .footer-right span {
+  font-size: 12px;
+  margin-right: 24px;
+}
+
+.footer .main-button {
+  width: 203px;
+  height: 60px;
+  font-size: 14px;
+  border-radius: 10px;
+}
+
+.break-line {
+  position: relative;
+  padding-bottom: 24px;
+}
+
+.break-line::after {
+  position: absolute;
+  content: "";
+  background-color: #ffffff33;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+}

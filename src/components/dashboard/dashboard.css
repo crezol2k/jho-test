@@ -1,0 +1,5 @@
+.dashboard-section {
+    height: inherit;
+    width: calc(100%);
+    background-color: #09091A;
+}
